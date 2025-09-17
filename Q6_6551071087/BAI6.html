@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra Form HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 200px;
+            padding: 5px;
+        }
+        select {
+            width: 210px;
+            padding: 5px;
+        }
+        input[type="submit"], input[type="reset"] {
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>PHIẾU ĐĂNG KÝ </h2>
+    <form>
+        <div class="form-group">
+            <label for="name">Họ và Tên</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="address">Địa chỉ</label>
+            <input type="text" id="address" name="address">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="form-group">
+            <label>Giới tính</label>
+            <input type="radio" id="male" name="gender" value="male"> <label for="male">Nam</label>
+            <input type="radio" id="female" name="gender" value="female"> <label for="female">Nữ</label>
+        </div>
+        <div class="form-group">
+            <label>Sở thích</label>
+            <input type="checkbox" id="sports" name="hobbies" value="sports"> <label for="sports">Thể thao</label>
+            <input type="checkbox" id="movies" name="hobbies" value="movies"> <label for="movies">Phim ảnh</label>
+            <input type="checkbox" id="travelling" name="hobbies" value="travelling"> <label for="travelling">Du lịch</label>
+        </div>
+        <div class="form-group">
+            <label for="country">Quốc gia</label>
+            <select id="country" name="country">
+                <option value="vietnam">Việt Nam</option>
+                <option value="thailand">Thái Lan</option>
+                <option value="indonesia">Indonesia</option>
+                <option value="singapore">Singapore</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="message">Tin nhắn</label>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Gửi">
+            <input type="reset" value="Làm lại">
+        </div>
+    </form>
+</body>
+</html>
